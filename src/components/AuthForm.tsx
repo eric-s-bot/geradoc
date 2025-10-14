@@ -14,6 +14,17 @@ export const AuthForm: React.FC = () => {
 
   const handleSubmit = async (e: React.FormEvent) => {
     e.preventDefault();
+    
+    if (!email.trim() || !password) {
+      setError('Por favor, preencha todos os campos');
+      return;
+    }
+    
+    if (password.length < 6) {
+      setError('A senha deve ter pelo menos 6 caracteres');
+      return;
+    }
+    
     setLoading(true);
     setError('');
 
@@ -23,16 +34,33 @@ export const AuthForm: React.FC = () => {
         : await signUp(email, password);
 
       if (error) {
-        setError(error.message);
+        // Traduzir mensagens de erro comuns
+        const errorMessage = translateError(error.message);
+        setError(errorMessage);
       } else if (!isLogin) {
-        setError('Conta criada com sucesso! Faça login para continuar.');
+        setError('Conta criada com sucesso! Você já pode fazer login.');
         setIsLogin(true);
+        setPassword(''); // Limpar senha após criar conta
       }
     } catch (err) {
       setError('Erro inesperado. Tente novamente.');
     } finally {
       setLoading(false);
     }
+  };
+
+  const translateError = (errorMessage: string): string => {
+    const errorTranslations: { [key: string]: string } = {
+      'Invalid login credentials': 'Email ou senha incorretos',
+      'Email not confirmed': 'Email não confirmado',
+      'User already registered': 'Usuário já cadastrado com este email',
+      'Password should be at least 6 characters': 'A senha deve ter pelo menos 6 caracteres',
+      'Invalid email': 'Email inválido',
+      'Signup is disabled': 'Cadastro desabilitado',
+      'Email rate limit exceeded': 'Muitas tentativas. Tente novamente mais tarde',
+    };
+    
+    return errorTranslations[errorMessage] || errorMessage;
   };
 
   return (
