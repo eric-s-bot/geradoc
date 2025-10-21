@@ -28,7 +28,7 @@ export const AuthForm: React.FC = () => {
         setError('Conta criada com sucesso! Faça login para continuar.');
         setIsLogin(true);
       }
-    } catch (err) {
+    } catch {
       setError('Erro inesperado. Tente novamente.');
     } finally {
       setLoading(false);
@@ -36,7 +36,7 @@ export const AuthForm: React.FC = () => {
   };
 
   return (
-    <div className="min-h-screen bg-gradient-to-br from-blue-50 to-indigo-100 flex items-center justify-center p-4">
+    <div className="min-h-screen bg-gradient-to-br from-blue-50 to-blue-100 flex items-center justify-center p-4">
       <div className="max-w-md w-full">
         {/* Header */}
         <div className="text-center mb-8">

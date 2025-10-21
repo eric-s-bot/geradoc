@@ -7,7 +7,7 @@ interface ClientFormProps {
 }
 
 export const ClientForm: React.FC<ClientFormProps> = ({ data, onDataChange }) => {
-  const updateField = (field: keyof ContractData, value: any) => {
+  const updateField = (field: keyof ContractData, value: string) => {
     onDataChange({ ...data, [field]: value });
   };
 

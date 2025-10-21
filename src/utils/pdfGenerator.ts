@@ -120,7 +120,6 @@ export class PDFGenerator {
     this.currentY += 15;
 
     // Cabeçalho da tabela
-    const tableStartY = this.currentY;
     const colWidths = [80, 30, 30, 30];
     const colPositions = [
       this.margin, 
