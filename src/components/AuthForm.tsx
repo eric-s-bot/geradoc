@@ -42,7 +42,7 @@ export const AuthForm: React.FC = () => {
         <div className="text-center mb-8">
           <div className="flex items-center justify-center gap-3 mb-4">
             <FileText className="w-12 h-12 text-blue-600" />
-            <h1 className="text-3xl font-bold text-gray-800">Market Host</h1>
+            <h1 className="text-3xl font-bold text-gray-800">ER.IA</h1>
           </div>
           <p className="text-gray-600">Gerador de Contratos e Orçamentos</p>
         </div>
