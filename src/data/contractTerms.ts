@@ -9,7 +9,7 @@ export const contractTerms: ContractTerms[] = [
     ]
   },
   {
-    title: "2. OBRIGAÇÕES DA CONTRATADA (MARKET HOST)",
+    title: "2. OBRIGAÇÕES DA CONTRATADA (ER.IA)",
     content: [
       "Executar os serviços contratados com qualidade e dentro dos prazos estabelecidos;",
       "Manter sigilo absoluto sobre todas as informações confidenciais do contratante;",
