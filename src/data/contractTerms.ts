@@ -51,7 +51,7 @@ export const contractTerms: ContractTerms[] = [
   {
     title: "6. PROPRIEDADE INTELECTUAL",
     content: [
-      "Os direitos autorais dos trabalhos desenvolvidos pela Market Host são regidos pela Lei 9.610/98 (Lei de Direitos Autorais);",
+      "Os direitos autorais dos trabalhos desenvolvidos pela ER.IA são regidos pela Lei 9.610/98 (Lei de Direitos Autorais);",
       "O contratante terá direito de uso dos materiais desenvolvidos conforme especificado;",
       "É vedada a reprodução ou distribuição não autorizada dos materiais, sob pena das sanções previstas nos arts. 102 a 110 da Lei 9.610/98."
     ]
