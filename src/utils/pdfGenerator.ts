@@ -40,7 +40,7 @@ export class PDFGenerator {
     // Título
     this.doc.setFontSize(20);
     this.doc.setFont('helvetica', 'bold');
-    this.doc.text('MARKET HOST', this.pageWidth/2, this.currentY + 15, { align: 'center' });
+    this.doc.text('ER.IA', this.pageWidth/2, this.currentY + 15, { align: 'center' });
     
     this.currentY += 35;
   }
@@ -198,9 +198,9 @@ export class PDFGenerator {
     const signatureWidth = 70;
     const signatureY = this.currentY;
     
-    // Assinatura Market Host
+    // Assinatura ER.IA
     this.doc.line(this.margin, signatureY, this.margin + signatureWidth, signatureY);
-    this.doc.text('Market Host', this.margin + signatureWidth/2, signatureY + 8, { align: 'center' });
+    this.doc.text('ER.IA', this.margin + signatureWidth/2, signatureY + 8, { align: 'center' });
     this.doc.text('Responsável', this.margin + signatureWidth/2, signatureY + 15, { align: 'center' });
     
     // Assinatura Cliente
