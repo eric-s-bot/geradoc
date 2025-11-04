@@ -25,7 +25,7 @@ export const contractTerms: ContractTerms[] = [
       "Fornecer todas as informações necessárias para a execução dos serviços;",
       "Efetuar os pagamentos nas datas estabelecidas;",
       "Comunicar alterações de dados de contato;",
-      "Colaborar com a Market Host fornecendo acesso aos sistemas quando necessário;",
+      "Colaborar com a ER.IA fornecendo acesso aos sistemas quando necessário;",
       "Respeitar os direitos autorais e de propriedade intelectual conforme Lei 9.610/98 (Lei de Direitos Autorais);",
       "Cumprir as disposições do Código de Defesa do Consumidor (Lei 8.078/90) quando aplicável."
     ]
