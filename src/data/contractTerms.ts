@@ -70,7 +70,7 @@ export const contractTerms: ContractTerms[] = [
     content: [
       "Este contrato é regido pelas leis brasileiras;",
       "Eventuais alterações deverão ser formalizadas por escrito;",
-      "O foro competente para dirimir questões deste contrato é o da comarca da sede da Market Host, conforme art. 100, IV, 'a' do Código de Processo Civil (Lei 13.105/2015);",
+      "O foro competente para dirimir questões deste contrato é o da comarca da sede da ER.IA, conforme art. 100, IV, 'a' do Código de Processo Civil (Lei 13.105/2015);",
       "Aplicam-se subsidiariamente as disposições do Código Civil Brasileiro (Lei 10.406/2002) e demais legislações pertinentes."
     ]
   }
